@@ -1,0 +1,70 @@
+<form id="gform" method="POST" class=""  action="https://script.google.com/macros/s/AKfycbwy9hyU8QGx9Fxzm8t0x2qthrSrX-cifqwaPVxwSpeTYLsZ9Pw7/exec">
+<div class="form-group">
+<label for="type">Hi, I am a</label>
+<input class="input-line" id="type" name="type" placeholder="developer" data-cip-id="type">
+<label for="org">at</label>
+<input class="input-line" id="org" name="org" placeholder="organization" data-cip-id="org">
+</div>
+<div class="form-group">
+<label for="name">My name is</label>
+<input class="input-line" id="name" name="name" placeholder="adam smith" data-cip-id="name">
+<label for="email">and I can be reached at</label>
+<input class="input-line" id="email" name="email" required placeholder="satoshi@bitcoin.com" data-cip-id="email">
+<span id="email-invalid" style="display:none">Humm don't you have an email address?</span>
+</div>
+<div class="form-group">
+<label for="msg">Here's what I'd like to know:</label><br />
+<textarea class="input-msg" id="msg" name="msg" placeholder="Message / Inquiry" rows="3"></textarea>
+<input type="hidden" id="source" name="source" value="<script>document.write (window.location.hostname);</script>" />
+<div class="btn-content-center">
+<button class="btn">Submit</button>
+</div>
+</div>
+</form>
+
+<!-- Thank You Msg -->
+<div style="display:none;" id="thankyou_message">
+<h2><em>Cool!</em></h2>
+</div>
+
+<!-- Submit the Form to Google Using "AJAX" -->
+<script src="/theme/assets/contactForm/gform-submission-handler.js"></script>
+
+<style>
+::placeholder {
+  color: silver;
+  font-style: italic;  
+}
+
+label.form-group
+{
+    font-size: 1.4rem;
+}
+
+button, input, optgroup, select, textarea{
+    font: inherit;
+    margin: 0;
+}
+textarea:focus, input:not([type]):focus {
+    outline: 0;
+    border-color: blue;
+}
+
+.input-line, .input-msg {
+    border: 0;
+    outline: 0;
+    /*background: #FDF6E3;*/
+    border-bottom: 1px dotted black;
+	font-size: 1.2rem;
+	padding-left: 0.5em;
+	/*color: blue;*/
+}
+.input-msg {
+	width: 60%;
+}
+
+.btn-content-center {
+	text-align: right;
+	width: 60%;
+}
+</style>
