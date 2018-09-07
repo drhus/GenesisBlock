@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Membership
-permalink: /membership/
+permalink: /membership.html
 subtitle: //
 description: GenesisBlock Membership
 ---
